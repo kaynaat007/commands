@@ -1,0 +1,9 @@
+open_graylog  ------ opens graylog server
+open_salt ---------- opens salt server
+source piws--------- takes you to the piws dir of the current user ( AviatorRepo )
+piws_runserver------ runs python server 
+source sp----------- opens supervisor directory 
+source log-----------opens log directory of the current user ( AviatorRepo )
+run_celery---------- runs the celery server 
+source flow---------- takes you the Flow dir of Tunnel project 
+
