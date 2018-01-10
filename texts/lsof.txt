@@ -1,0 +1,13 @@
+lsof is command to list opened files by processes. lsof = ls + of
+
+[lsof <file_path>]    =====     list all processes which opened a specific file
+[lsof +D <path_to_dir>] ======      list opened files in a directory 
+[lsof -c <process_name>] ======   list all files opened by process name that begins with name provided in arg
+[lsof -p <process_id>] ====== list all ]= list all files opnened by process id 
+[lsof -u <username> ] ===== list all files opened by specific user. 
+[lsof -t <path_to_file>] ===== list the process id of the process that opnened this file
+[lsof -t -u <username>] ====== list the process ids of the processed opened by this user
+[lsof -i] =================== list all open network files
+[lsof -i -a -p <process_id]====list all network files in use by a specific process. 
+[lsof -i -a -c <process_name>] === list all network files in use by process name 
+[lsof -i :<port> ] =============== list all files listening on a port
