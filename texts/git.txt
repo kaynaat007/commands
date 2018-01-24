@@ -1,0 +1,1 @@
+[ git pull https://kaynaat:iit2011146%402015@bitbucket.org/kaynaat/nucleus.git master ] === git pull without entering passwords. 

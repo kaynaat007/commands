@@ -6,4 +6,5 @@ source sp----------- opens supervisor directory
 source log-----------opens log directory of the current user ( AviatorRepo )
 run_celery---------- runs the celery server 
 source flow---------- takes you the Flow dir of Tunnel project 
+source hotshot------- takes to you hotshot dir 
 
