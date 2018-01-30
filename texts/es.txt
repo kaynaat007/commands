@@ -1,2 +1,2 @@
 [curl -XGET 'localhost:9200/_cat/indices?v&pretty'] ====== 'list all indices in elasticsearch' 
-
+[ curl -XGET 'localhost:9200/drona__0/_mapping' ] ==== 'show the mappings of a particular index' 

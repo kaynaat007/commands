@@ -1,1 +1,2 @@
 [ git pull https://kaynaat:iit2011146%402015@bitbucket.org/kaynaat/nucleus.git master ] === git pull without entering passwords. 
+[ git fetch; git checkout <branch> ] === to checkout a remote branch not yet on your system 
