@@ -1,2 +1,2 @@
 
-python /home/nikhil/commands/cheat.py $1
+python /home/nikhil/Documents/commands/cheat/manage.py $0  
