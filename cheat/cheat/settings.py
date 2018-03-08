@@ -101,3 +101,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MQTT_BROKER_HOST = 'localhost'
+MQTT_BROKER_PORT = 1883
+
+# client topics
+ADD_OR_UPDATE_ENTITY = 'add_or_update_entity'  # client pushes data on this topic
+PUSH_ENTITY = 'push_entity'  # client listens on topic
+SYNC = 'sync-'  # each client listens on this topic. Syncs all data arrived at this topic.
+FETCH = 'fetch'  # client publishes on this topic to fetch all data of master.
+
+MQTT_SUBSCRIBER_BASE_NAME = 'slave-sub-'
+MQTT_PUBLISHER_BASE_NAME = 'slave-pub-'
