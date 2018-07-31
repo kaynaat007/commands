@@ -1,0 +1,48 @@
+[{
+
+ "key": "SELECT * FROM mytable  WHERE (c->>'start')::timestamp with time zone > '2016-01-01'::timestamp with time zone;", 
+ "detail": "#POSTGRESS: query for querying datetime field on JSONFIELD"
+},
+{
+
+ "key" : "select id, data->'key3'->'ab'->'ko'  as key3  from core_bucket",
+ "detail": "#POSTGRESS: query for path traversal into a json"
+},
+{
+  "key": "select preferences->'beta' from users where (preferences->>'beta')::boolean is true;",
+  "detail": "#POSTGRESS: query a json column for trueness. You have to convert it into boolean first "
+},
+{
+  "key": "select params->ids->0 from events;",
+  "detail": "#POSTGRESS: Give me the first index of a JSON array"
+},
+{
+   "key": "select * from events where params->>'name' = 'Click Button';",
+   "detail": "#POSTGRESS: simple where clause."
+}
+,
+{
+   "key": "SELECT '[ 'Fiction', 'Thriller', 'Horror']'::jsonb @> '[ 'Fiction', 'Horror']'::jsonb;",
+   "detail" : "#POSTGRESS: [left @> right] means weather right is in left or not"   
+},
+{
+   "key": "CREATE INDEX idx_published ON books (data->'published');", 
+   "detail" : "#POSTGRESS: Create index on JSON field"
+
+},
+{
+   "key" : "SELECT jsonb_array_elements_text(data->'genres') AS genre  FROM books   WHERE book_id = 1;",
+   "detail" : "#POSTGRESS: That will expand the JSON array into a column" 
+
+},
+{  
+"key" : "SELECT  info -> 'items' ->> 'product' AS product FROM orders WHERE CAST ( info ->' items' ->> 'qty' AS INTEGER ) = 2",
+"detail": "#POSTGRESS: How to cast values in postgress" 
+},
+{
+ "key" : "SELECT MIN ( CAST (info -> 'items' ->> 'qty' AS INTEGER) ) from orders",
+ "detail": "#POSTGRESS: Aggregate functions usage. Other are MAX, ABG, SUM, COUNT"
+}
+
+]
+

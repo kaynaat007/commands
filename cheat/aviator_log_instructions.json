@@ -1,0 +1,23 @@
+{
+  "aviator": {
+	  "meta_file_name": "log_meta.json",
+ 	  "ftp_log_directory": "files/logs",
+ 	  "files":
+
+      	   [
+                "/home/dyfo_runner/AviatorRepo/dyfo/logs/pi_server.log",
+                "/home/dyfo_runner/AviatorRepo/dyfo/logs/mqtt_server.log",
+                "/home/dyfo_runner/AviatorRepo/dyfo/logs/apollo_client.log", 
+                "/home/dyfo_runner/AviatorRepo/dyfo/logs/async_log.log"
+           ]
+       },
+     
+  "drona": {
+
+	  "meta_file_name": "log_meta.json",
+ 	  "ftp_log_directory": "files/logs",
+ 	  "files": [ "/home/ubuntu/dyfo/projects/drona/logs/server.log" ]         
+  }
+  
+}
+
